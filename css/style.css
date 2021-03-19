@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #010202;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a { 
+    text-decoration: none;
+}
+
+.header {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.app {
+    background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90.9%);
+    min-height: 100vh;
+    color: white;
+    
+}
+.film {
+    max-width: 1146px;
+    margin: auto;
+    padding: 7% 0;
+    width: 90%;
+    height: auto;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    opacity: 0.4;
+    color: #E5E5E5;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.age {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+.tags > * {
+    margin-right: 15px;
+    padding-bottom: 10px;
+}
+
+.description {
+    max-width: 460px;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 140%;
+    background: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: #EA6E20;
+    margin-right: 15px;
+}
+
+.button-text {
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+@media (max-width: 768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background: url('../img/cover-image.jpg') no-repeat bottom center /300px;
+    }
+
+    video {
+        display: none;
+    }
+
+    .film {
+        padding-right: 2%;
+    }
+
+    .description {
+        font-size: 15px;
+        max-width: 333px;
+    }
+
+    .film-logo {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .button-text {
+        display: none;
+    }
+    .user-name {
+        display: none;
+    }
+    .app {
+        padding-bottom: 350px;
+        background-size: 300px;
+    }
+}
